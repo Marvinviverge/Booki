@@ -1,0 +1,10 @@
+
+body {
+    box-sizing: border-box;
+    /* box-sizing est appliqué à tous les éléments */
+}
+
+p
+{
+    font-family: "Raleway", sans-serif;
+}
