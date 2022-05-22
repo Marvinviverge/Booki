@@ -1,9 +1,397 @@
-body {
+/* Générique */
+body 
+{
     box-sizing: border-box;
-    /* box-sizing est appliqué à tous les éléments */
+    font-family: "Raleway", sans-serif;
+    padding:20px;
 }
 
-p
+#bloc_page
 {
-    font-family: "Raleway", sans-serif;
+    width: 992px;
+    margin: auto;
+}
+
+.blue
+{
+    color:#0065FC
+}
+
+/* Images */
+
+.image_hostels1
+{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.image_pop
+{
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+
+.image_de_notre_dame
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_de_parc
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_vieux_port
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_fort_de_pomegues
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_iles_du_frioul
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_de_calanques
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* Header */
+
+header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display:flex;
+}
+
+nav ul a
+{
+    text-decoration: none;
+    padding-top: 30px;
+    color:black;
+}
+
+a:hover
+{
+border-top: 1px solid #0065FC;
+color: #0065FC;
+}
+
+nav li
+{
+    margin-right: 20px;
+}
+
+/* Main */
+
+    /* Première section/Boutton rechercher */
+
+::placeholder
+{
+    color:black;
+    opacity:1;
+    font-weight: bold;
+}
+
+.fa-location-dot
+{
+    background-color: #F2F2F2;
+    padding:15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+form
+{
+    display:flex;
+    align-items: center;
+}
+
+.searching
+{
+    border-left:none;
+    border-right:none;
+    padding:13px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    position: relative;
+}
+
+.searching_button
+{
+    padding:14px;
+    border: none;
+    color: white;
+    background-color: #0065FC;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+}
+    /* Deuxième section/Filtres */
+
+#filters
+{
+    display:flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#eco
+{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#eco .fa-solid
+{
+    padding:15px;
+    background-color: #DEEBFF;
+    border-radius: 25px;
+}
+span
+{
+    border:3px solid #F2F2F2;
+    border-radius: 25px;
+    padding:10px;
+}
+
+    /* Troisième section/Informations */
+
+#informations
+{
+    display: flex;
+    align-items: center;
+}
+
+    /* Quatrième section/hébergements */
+
+.hostels1
+{
+    max-block-size: 200px;
+    background-color: white;
+    height: 200px ;
+    width: 200px;
+    margin: 5px;
+}
+
+.hostels_line1
+{
+    display:flex;
+    align-content: space-between;
+}
+
+#hostels
+{
+    display: flex;
+    width: 950px;
+    height: 700px;
+    
+}
+
+#most_pop
+{
+    background-color: #F2F2F2;
+    width: 300px;
+    border-radius: 15px;
+    margin-left: 20px;
+    border:solid 1px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:10px;
+    align-content: center;
+    align-items: center;
+}
+
+#hostels_marseille
+{
+    background-color: #F2F2F2;
+    width: 650px;
+    border-radius: 15px;
+    border:solid 1px white;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#most_pop_children
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hostels_pop
+{
+    display: flex;
+    background-color: white;
+    height: 150px ;
+    width: 200px;
+    border-radius: 15px;
+    overflow: auto;
+    padding:5px;
+    font-size:10px    
+}
+
+    /* Cinquième section/Activités */
+#activities
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 950px;
+    height: 700px;
+}
+
+#activities_children
+{
+    display:flex;
+    width:900px;
+    height:700px;
+
+}
+
+#activities_children_port
+{
+    height: 90%;
+    width: 200px;
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+#activities_children_fort
+{
+    height: 50%;
+    width: 200px;
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#activities_children_frioul
+{
+    height: 40%;
+    width: 200px;
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#activities_children_calanques
+{
+    height: 90%;
+    width: 200px;
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#activities_children_notre_dame
+{
+    height: 50%;
+    width: 200px;
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+#activities_children_longchamp
+{
+    height: 40%;
+    width: 200px;
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Footer */
+
+footer
+{
+    display:flex;
+    background-color: #F2F2F2;
+}
+
+footer ul
+{
+    list-style-type: none;
+}
+
+
+/* TEST */
+
+.container_card {
+    width: 200px; /*1*/
+    margin: 0px auto; /*2*/
+    background-color: white; /*3*/
+    box-shadow: 0px 5px 20px #999; /*4*/
+  }
+  .container_card a { /*5*/
+    color: #333; 
+    text-decoration: none;
+  }
+  .container_card:hover .card_image img { /*6*/
+    width: 160%;
+    filter: grayscale(0);
+  }
+  .card_image {
+    height: 200px;/*1*/
+    position: relative;/*2*/
+    overflow: hidden;/*3*/
+  }
+  .card_image img {
+    width: 150%;/*4*/
+      /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);/*6*/
+      /*7 - Transition */
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+  .card_body {
+    text-align:left;  /*1*/
+    padding: 15px 20px; /*2*/
+    box-sizing: border-box; /*3*/
 }
