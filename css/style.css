@@ -9,72 +9,12 @@ body
 #bloc_page
 {
     width: 992px;
-    margin: auto;
+    margin:auto;
 }
 
 .blue
 {
     color:#0065FC
-}
-
-/* Images */
-
-.image_hostels1
-{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-}
-
-.image_pop
-{
-    width: 60%;
-    height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    object-fit: cover;
-}
-
-.image_de_notre_dame
-{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.image_de_parc
-{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.image_vieux_port
-{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.image_fort_de_pomegues
-{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.image_iles_du_frioul
-{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.image_de_calanques
-{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
 }
 
 /* Header */
@@ -163,6 +103,7 @@ form
     display:flex;
     align-items: center;
     padding-top: 20px;
+    gap: 30px;
 }
 
 #eco
@@ -170,21 +111,29 @@ form
     font-weight: bold;
     display: flex;
     align-items: center;
+    padding-right:20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    gap:15px;
 }
 
 #eco .fa-solid
 {
     padding:15px;
     background-color: #DEEBFF;
-    border-radius: 25px;
-}
-span
-{
-    border:3px solid #F2F2F2;
-    border-radius: 25px;
-    padding:10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left:-5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#eco:hover
+{
+    border:2px solid #0065FC;
+}
     /* Troisième section/Informations */
 
 #informations
@@ -193,35 +142,52 @@ span
     align-items: center;
 }
 
+#informations .fa-solid
+{
+    padding: 10px;
+    border: 2px solid #F2F2F2;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
     /* Quatrième section/hébergements */
 
 .hostels1
 {
-    max-block-size: 200px;
+    max-block-size: 30%;
     background-color: white;
-    height: 200px ;
-    width: 200px;
+    height: 30% ;
+    width: 30%;
     margin: 5px;
 }
 
 .hostels_line1
 {
     display:flex;
-    align-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 #hostels
 {
     display: flex;
-    width: 950px;
+    width: 95%;
     height: 700px;
-    
+}
+
+#hostels_marseille
+{
+    width: 66%;
 }
 
 #most_pop
 {
     background-color: #F2F2F2;
-    width: 300px;
+    width: 33%px;
     border-radius: 15px;
     margin-left: 20px;
     border:solid 1px white;
@@ -251,6 +217,12 @@ span
     align-items: center;
     justify-content: space-between;
 }
+
+h2
+{
+    font-size: 20px;
+}
+
 
 .hostels_pop
 {
@@ -353,6 +325,67 @@ footer
 footer ul
 {
     list-style-type: none;
+}
+
+
+/* Images */
+
+.image_hostels1
+{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.image_pop
+{
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+
+.image_de_notre_dame
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_de_parc
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_vieux_port
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_fort_de_pomegues
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_iles_du_frioul
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image_de_calanques
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
 }
 
 
