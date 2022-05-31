@@ -1,4 +1,10 @@
 /* Générique */
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
 body 
 {
     box-sizing: border-box;
@@ -8,8 +14,7 @@ body
 
 #bloc_page
 {
-    width: 992px;
-    margin:auto;
+    margin:50px;
 }
 
 .blue
@@ -163,6 +168,10 @@ form
     height: 30% ;
     width: 30%;
     margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px #999;
 }
 
 .hostels_line1
@@ -176,18 +185,12 @@ form
 {
     display: flex;
     width: 95%;
-    height: 700px;
-}
-
-#hostels_marseille
-{
-    width: 66%;
 }
 
 #most_pop
 {
     background-color: #F2F2F2;
-    width: 33%px;
+    width: 33%;
     border-radius: 15px;
     margin-left: 20px;
     border:solid 1px white;
@@ -202,7 +205,7 @@ form
 #hostels_marseille
 {
     background-color: #F2F2F2;
-    width: 650px;
+    width: 66%;
     border-radius: 15px;
     border:solid 1px white;
     padding:10px;
@@ -229,7 +232,7 @@ h2
     display: flex;
     background-color: white;
     height: 150px ;
-    width: 200px;
+    width: 90%;
     border-radius: 15px;
     overflow: auto;
     padding:5px;
@@ -242,14 +245,14 @@ h2
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 950px;
+    width: 95%;
     height: 700px;
 }
 
 #activities_children
 {
     display:flex;
-    width:900px;
+    width:95%;
     height:700px;
 
 }
@@ -257,7 +260,7 @@ h2
 #activities_children_port
 {
     height: 90%;
-    width: 200px;
+    width: 25%;
     border: solid 1px black;
     margin: 10px;
     border-radius: 15px;
@@ -267,7 +270,7 @@ h2
 #activities_children_fort
 {
     height: 50%;
-    width: 200px;
+    width: 90%;
     border: solid 1px black;
     margin: 10px;
     border-radius: 15px;
@@ -277,7 +280,7 @@ h2
 #activities_children_frioul
 {
     height: 40%;
-    width: 200px;
+    width: 90%;
     border: solid 1px black;
     margin: 10px;
     border-radius: 15px;
@@ -287,7 +290,7 @@ h2
 #activities_children_calanques
 {
     height: 90%;
-    width: 200px;
+    width: 25%;
     border: solid 1px black;
     margin: 10px;
     border-radius: 15px;
@@ -297,7 +300,7 @@ h2
 #activities_children_notre_dame
 {
     height: 50%;
-    width: 200px;
+    width: 90%;
     border: solid 1px black;
     margin: 10px;
     border-radius: 15px;
@@ -307,7 +310,7 @@ h2
 #activities_children_longchamp
 {
     height: 40%;
-    width: 200px;
+    width: 90%;
     border: solid 1px black;
     margin: 10px;
     border-radius: 15px;
@@ -335,6 +338,9 @@ footer ul
     width: 100%;
     height: 60%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin:1%;
 }
 
 .image_pop
@@ -392,10 +398,10 @@ footer ul
 /* TEST */
 
 .container_card {
-    width: 200px; /*1*/
-    margin: 0px auto; /*2*/
+    width: 250px; /*1*/
     background-color: white; /*3*/
-    box-shadow: 0px 5px 20px #999; /*4*/
+    box-shadow: 0px 5px 10px #999; /*4*/
+    border-radius: 20px;
   }
   .container_card a { /*5*/
     color: #333; 
