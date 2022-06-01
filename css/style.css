@@ -27,6 +27,11 @@ body
     color:#F2F2F2
 }
 
+main
+{
+    padding:50px;
+}
+
 /* Header */
 
 header
@@ -34,7 +39,7 @@ header
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px;
+    padding:0px 50px 0px 50px;
 }
 
 nav ul
@@ -50,7 +55,7 @@ nav ul a
     color:black;
 }
 
-a:hover
+nav a:hover
 {
 border-top: 1px solid #0065FC;
 color: #0065FC;
@@ -84,6 +89,7 @@ form
 {
     display:flex;
     align-items: center;
+    margin-top:10px;
 }
 
 .searching
@@ -112,7 +118,7 @@ form
 {
     display:flex;
     align-items: center;
-    padding-top: 20px;
+    margin-top: 20px;
     gap: 30px;
 }
 
@@ -150,6 +156,7 @@ form
 {
     display: flex;
     align-items: center;
+    margin: 15px 0px 15px 0px;
 }
 
 #informations .fa-solid
@@ -159,7 +166,7 @@ form
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    margin: 10px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +176,7 @@ form
 .hostels1
 {
     background-color: white;
-    height: 30% ;
+    height: 250px ;
     width: 30%;
     margin: 5px;
     border-radius: 20px;
@@ -188,7 +195,7 @@ form
 {
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .hostels1_body
@@ -209,7 +216,6 @@ form
 #hostels
 {
     display: flex;
-    width: 95%;
 }
 
 #most_pop
@@ -231,7 +237,7 @@ form
     padding:40px;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap:50px;
 }
 
 #most_pop_children
@@ -252,8 +258,8 @@ h2
 {
     display: flex;
     background-color: white;
-    height: 25% ;
-    width: 90%;
+    height: 180px ;
+    width: 80%;
     border-radius: 20px;
     padding:5px;
     margin:auto ;
@@ -280,74 +286,80 @@ h2
 {
     display:flex;
     flex-direction: column;
+    gap:20px;
+    margin-top:50px;
 }
 
 #activities_children
 {
     display:flex;
-    width:95%;
-    height:700px;
+    gap:40px;
 
 }
 
 #activities_children_port
 {
-    height: 90%;
+    height: 540px;
     width: 25%;
-    border: solid 1px black;
-    margin: 10px;
+    box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
-    overflow: auto;
+    overflow: hidden;
+}
+
+.activities_children_container_bis
+{
+    width:25%;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    box-sizing: border-box;
+    
 }
 
 #activities_children_fort
 {
-    height: 50%;
-    width: 90%;
-    border: solid 1px black;
-    margin: 10px;
+    height: 300px;
+    box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
 
 #activities_children_frioul
 {
-    height: 40%;
-    width: 90%;
-    border: solid 1px black;
-    margin: 10px;
+    height: 200px;
+    box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
 
 #activities_children_calanques
 {
-    height: 90%;
+    height: 540px;
     width: 25%;
-    border: solid 1px black;
-    margin: 10px;
+    box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
 
 #activities_children_notre_dame
 {
-    height: 50%;
-    width: 90%;
-    border: solid 1px black;
-    margin: 10px;
+    height: 225px;
+    box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #activities_children_longchamp
 {
-    height: 40%;
-    width: 90%;
-    border: solid 1px black;
-    margin: 10px;
+    height: 275px;
+    box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
+}
+
+#activities_children h3
+{
+    padding: 10px 0px 10px 20px;
 }
 
 /* Footer */
@@ -416,7 +428,7 @@ footer ul a
 .image_de_notre_dame
 {
     width: 100%;
-    height: 80%;
+    height: 75%;
     object-fit: cover;
 }
 
@@ -430,7 +442,7 @@ footer ul a
 .image_vieux_port
 {
     width: 100%;
-    height: 80%;
+    height: 90%;
     object-fit: cover;
 }
 
@@ -444,13 +456,13 @@ footer ul a
 .image_iles_du_frioul
 {
     width: 100%;
-    height: 80%;
+    height: 73%;
     object-fit: cover;
 }
 
 .image_de_calanques
 {
     width: 100%;
-    height: 80%;
+    height: 90%;
     object-fit: cover;
 }
