@@ -560,7 +560,7 @@ h3{
 {
     main 
     {
-        padding:10px;
+        padding:inherit;
     }
 
     #logo
@@ -589,7 +589,7 @@ h3{
 
     #search_city
     {
-        padding:0px 10px;
+        padding:0px 20px;
     }
 
 
@@ -597,7 +597,7 @@ h3{
     {
         flex-direction: column;
         align-items: inherit;
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
     #eco_parent
@@ -607,7 +607,7 @@ h3{
 
     #informations
     {
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
     #hostels
@@ -619,14 +619,14 @@ h3{
     #hostels_marseille
     {
         background-color: inherit;
-        padding:10px;
+        padding:20px;
         margin-top: 10px;
     }
     #most_pop
     {
         flex-direction: column;
         border-radius: inherit;
-        padding: 10px;
+        padding: 20px;
     }
 
     #most_pop_children
@@ -653,7 +653,7 @@ h3{
 
     #activities
     {
-        padding:10px;
+        padding:20px;
         margin-top:30px;
     }
 
