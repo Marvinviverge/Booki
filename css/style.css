@@ -632,6 +632,12 @@ h3{
     #most_pop_children
     {
         flex-direction: row;
+        width:inherit;
+    }
+
+    #most_pop a 
+    {
+        width:inherit;
     }
 
     .hostels_line1
