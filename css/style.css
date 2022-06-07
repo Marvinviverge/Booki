@@ -122,12 +122,18 @@ form
 }
     /* Deuxième section/Filtres */
 
-#filters
+#filters_parents
 {
     display:flex;
     align-items: center;
-    margin-top: 20px;
-    gap: 30px;
+    gap:15px;
+    margin-top:15px;
+}
+
+#eco_parent
+{
+    display: flex;
+    gap:15px;
 }
 
 #eco
@@ -545,9 +551,56 @@ h3{
 /* Responsive smartphone */
 @media screen and (max-width: 767px)
 {
-    #bloc_page
+    main 
     {
-        width:auto;
+        padding:10px;
+    }
+
+    #logo
+    {
+        height:70px;
+        margin-bottom:20px;
+    }
+    
+    header
+    {
+        width:100%;
+        flex-direction:column;
+        padding:inherit;
+    }
+
+    nav a:hover
+    {
+        border-top:inherit;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    nav ul
+    {
+        font-size: 22px;
+    }
+
+    #search_city
+    {
+        padding:0px 10px;
+    }
+
+
+    #filters_parents
+    {
+        flex-direction: column;
+        align-items: inherit;
+        padding: 0px 10px;
+    }
+
+    #eco_parent
+    {
+        flex-wrap: wrap;
+    }
+
+    #informations
+    {
+        padding: 0px 10px;
     }
 
     #hostels
@@ -556,8 +609,91 @@ h3{
         flex-direction: column-reverse;
     }
 
-    header
+    #hostels_marseille
     {
-        flex-direction:column;
+        background-color: inherit;
+        padding:10px;
+        margin-top: 10px;
+    }
+    #most_pop
+    {
+        flex-direction: column;
+        border-radius: inherit;
+        padding: 10px;
+    }
+
+    #most_pop_children
+    {
+        flex-direction: row;
+    }
+
+    .hostels_line1
+    {
+        flex-direction: column;
+    }
+    
+    .hostels_line1 a
+    {
+        height:inherit;
+        width: inherit;
+    }
+
+    #activities
+    {
+        padding:10px;
+        margin-top:30px;
+    }
+
+    #activities_children
+    {
+        flex-direction: column;
+    }
+
+    #activities_children_port
+    {
+        width:inherit;
+        height: 200px;
+    }
+
+    .activities_children_container_bis
+    {
+        width:inherit;
+        height: inherit;
+    }
+    #activities_children_calanques
+    {
+        width:inherit;
+        height: 200px;
+    }
+    #activities_children_longchamp
+    {
+        width:inherit;
+        height: 200px;
+    }
+    #activities_children_frioul
+    {
+        width:inherit;
+        height: 200px;
+    }
+    #activities_children_fort
+    {
+        width:inherit;
+        height: 200px;
+    }
+    #activities_children_notre_dame
+    {
+        width:inherit;
+        height: 200px;
+    }
+
+    #activities_children img
+    {
+        height:80%;
+    }
+
+    .footer_container
+    {
+        flex-direction: column;
+        gap:50px;
     }
 }
