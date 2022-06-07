@@ -191,6 +191,12 @@ form
     color: black;
 }
 
+#hostels a
+{
+    text-decoration: none;
+    color: black;
+}
+
 .hostels_line1
 {
     display:flex;
@@ -208,11 +214,6 @@ form
     box-sizing: border-box;
 }
 
-.hostels1 a :hover
-{
-    color: red;
-}
-
 #hostels
 {
     display: flex;
@@ -223,7 +224,7 @@ form
     background-color: #F2F2F2;
     width: 33%;
     border-radius: 15px;
-    margin-left: 20px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -245,12 +246,12 @@ form
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding:40px 40px 0px 40px;
+    padding:30px 40px 0px 40px;
 }
 
 h2
 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -262,10 +263,10 @@ h2
     width: 80%;
     border-radius: 20px;
     padding:5px;
-    margin:auto ;
     font-size:16px;
     box-sizing: border-box;
     box-shadow: 0px 5px 10px #999;
+    margin-left:10%;
 }
 
 .hostels_pop_body
@@ -418,7 +419,7 @@ footer ul a
 
 .image_pop
 {
-    width: 60%;
+    width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -465,4 +466,18 @@ footer ul a
     width: 100%;
     height: 90%;
     object-fit: cover;
+}
+
+/* Responsive smartphone*/
+@media all and (max-width: 768px)
+{
+    #bloc_page
+    {
+        width:auto;
+    }
+
+    header
+    {
+        flex-direction:column;
+    }
 }
