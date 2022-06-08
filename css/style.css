@@ -581,16 +581,25 @@ h3{
         padding:inherit;
     }
 
+    nav 
+    {
+        border-bottom: solid 2px #F2F2F2;
+        margin-bottom: 10px;
+        padding: 0 250px;
+    }
+
     nav a:hover
     {
         border-top:inherit;
         border-bottom: 2px solid #0065FC;
+        padding: 10px;
     }
 
     nav ul
     {
         font-size: 22px;
         width: 100%;
+        margin-bottom: 10px;
     }
 
     #search_city
@@ -601,18 +610,19 @@ h3{
     .searching_glass
     {
         display:inline-block;
-        padding:12px;
+        padding:11px;
         border: none;
         color: white;
         background-color: #0065FC;
         border-radius: 15px;
+        margin-left:190px;
+        position:absolute;
     }
 
     .searching_button
     {
         display:none;
     }
-
 
     #filters_parents
     {
