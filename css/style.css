@@ -614,12 +614,12 @@ h3{
     .searching_glass
     {
         display:inline-block;
-        padding:11px;
+        padding:12px;
         border: none;
         color: white;
         background-color: #0065FC;
         border-radius: 15px;
-        margin-left:190px;
+        margin-left:185px;
         position:absolute;
     }
 
