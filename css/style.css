@@ -120,6 +120,11 @@ form
     font-weight: bold;
     font-size: 12px;
 }
+
+.searching_glass
+{
+    display:none;
+}
     /* Deuxième section/Filtres */
 
 #filters_parents
@@ -585,11 +590,27 @@ h3{
     nav ul
     {
         font-size: 22px;
+        width: 100%;
     }
 
     #search_city
     {
         padding:0px 20px;
+    }
+
+    .searching_glass
+    {
+        display:inline-block;
+        padding:12px;
+        border: none;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 15px;
+    }
+
+    .searching_button
+    {
+        display:none;
     }
 
 
@@ -626,13 +647,15 @@ h3{
     {
         flex-direction: column;
         border-radius: inherit;
-        padding: 20px;
+        padding: 10px 20px;
     }
 
     #most_pop_children
     {
         flex-direction: row;
         width:inherit;
+        padding: inherit;
+        margin-bottom: 10px;
     }
 
     #most_pop a 
