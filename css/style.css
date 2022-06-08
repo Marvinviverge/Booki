@@ -266,6 +266,11 @@ form
     gap:25px;
 }
 
+#most_pop a
+{
+    transition: 0.2s;
+}
+
 #hostels_marseille
 {
     background-color: #F2F2F2;
@@ -571,7 +576,7 @@ h3{
     #logo
     {
         height:70px;
-        margin-bottom:20px;
+        margin: 20px 0 20px 40px;
     }
     
     header
@@ -581,11 +586,10 @@ h3{
         padding:inherit;
     }
 
-    nav 
+    nav
     {
         border-bottom: solid 2px #F2F2F2;
         margin-bottom: 10px;
-        padding: 0 250px;
     }
 
     nav a:hover
