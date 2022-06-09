@@ -590,13 +590,15 @@ h3{
     {
         border-bottom: solid 2px #F2F2F2;
         margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
     }
 
     nav a:hover
     {
         border-top:inherit;
         border-bottom: 2px solid #0065FC;
-        padding: 10px;
+        padding: 10px 0;
     }
 
     nav ul
@@ -604,6 +606,13 @@ h3{
         font-size: 22px;
         width: 100%;
         margin-bottom: 10px;
+        display: inherit;
+    }
+
+    nav li
+    {
+        display:inline;
+        margin-right: inherit;
     }
 
     #search_city
