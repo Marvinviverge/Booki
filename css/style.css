@@ -1,89 +1,84 @@
-/* Générique */
+    /* Générique */
 
 *{
     margin:0px;
     padding:0px;
 }
 
-body 
-{
+body {
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
 }
 
-a
-{
+a{
     color:inherit;
     text-decoration: none;
 }
 
-.blue
-{
+.blue{
     color:#0065FC
 }
 
-.grey
-{
+.grey{
     color:#F2F2F2
 }
 
-main
-{
+main{
     padding:30px 50px 50px 50px;
 }
 
-/* Header */
-
-#logo
-{
-    height: 45px;
+h2{
+    font-size: 16px;
 }
 
-header
-{
+h3{
+    font-size: 16px;
+}
+
+    /* Header */
+
+header{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding:50px 50px 0px 70px;
 }
 
-nav ul
-{
+#logo{
+    height: 45px;
+}
+
+nav ul{
     list-style-type: none;
     display:flex;
 }
 
-nav ul a
-{
+nav ul a{
     text-decoration: none;
     padding-top: 30px;
     color:black;
 }
 
-nav a:hover
-{
-border-top: 1px solid #0065FC;
-color: #0065FC;
+nav a:hover{
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
 }
 
-nav li
-{
+nav li{
     margin-right: 20px;
 }
 
-/* Main */
+    /* Main */
 
-    /* Première section/Boutton rechercher */
+            /* Première section/Boutton rechercher */
 
-::placeholder
-{
+::placeholder{
     color:black;
     opacity:1;
     font-weight: bold;
 }
 
-.fa-location-dot
-{
+.fa-location-dot{
     background-color: #F2F2F2;
     padding:15px;
     border-top-left-radius: 15px;
@@ -91,15 +86,13 @@ nav li
     font-size: 12px;
 }
 
-form
-{
+form{
     display:flex;
     align-items: center;
     margin-top:10px;
 }
 
-.searching
-{
+.searching{
     border-left:none;
     border-right:none;
     padding:13px;
@@ -109,8 +102,7 @@ form
     font-size: 12px;
 }
 
-.searching_button
-{
+.searching_button{
     padding:14px;
     border: none;
     color: white;
@@ -121,28 +113,25 @@ form
     font-size: 12px;
 }
 
-.searching_glass
-{
+.searching_glass{
     display:none;
 }
-    /* Deuxième section/Filtres */
 
-#filters_parents
-{
+        /* Deuxième section/Filtres */
+
+#container_filters{
     display:flex;
     align-items: center;
     gap:15px;
     margin-top:15px;
 }
 
-#eco_parent
-{
+#icons_parent{
     display: flex;
     gap:15px;
 }
 
-#eco
-{
+.icons{
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -153,8 +142,7 @@ form
     font-size: 12px;
 }
 
-#eco .fa-solid
-{
+.icons .fa-solid{
     padding:10px;
     background-color: #DEEBFF;
     width: 15px;
@@ -166,22 +154,20 @@ form
     justify-content: center;
 }
 
-#eco:hover
-{
+.icons:hover{
     border:2px solid #0065FC;
 }
-    /* Troisième section/Informations */
 
-#informations
-{
+        /* Troisième section/Informations */
+
+#informations{
     display: flex;
     align-items: center;
     margin: 15px 0px 15px 0px;
     font-size: 12px;
 }
 
-#informations .fa-solid
-{
+#informations .fa-solid{
     border: 2px solid #F2F2F2;
     width: 22px;
     height: 22px;
@@ -191,10 +177,35 @@ form
     align-items: center;
     justify-content: center;
 }
-    /* Quatrième section/hébergements */
 
-.hostels_line1 a
-{
+        /* Quatrième section/Cartes */
+
+            /* Hébergement à Marseille */
+
+#container_hostels{
+    display: flex;
+}
+            
+#container_hostels h2{
+    font-size: 17px;
+}
+            
+#container_hostels_marseille{
+    background-color: #F2F2F2;
+    width: 66%;
+    border-radius: 15px;
+    padding:35px 20px;
+}
+
+#hostels_children{
+    display:flex;
+    flex-flow: row wrap;
+    padding: 20px 0px;
+    justify-content: space-between;
+    gap:10px;
+}
+
+#hostels_children a{
     background-color: white;
     height: 200px;
     width: 30%;
@@ -206,37 +217,23 @@ form
     transition: 0.2s;
 }
 
-.hostels_line1 a:hover
-{
+#hostels_children a:hover{
     transform:scale(1.05);
 }
 
-.hostels_line1 a p
-{
+#hostels_children a p{
     font-size: 13px;
 }
 
-.hostels_line1 a .stars
-{
+#hostels_children a .stars{
     font-size: 11px;
 }
 
-.hostels_line1 a h3
-{
+#hostels_children a h3{
     font-size: 14px;
 }
 
-.hostels_line1
-{
-    display:flex;
-    flex-flow: row wrap;
-    padding: 20px 0px;
-    justify-content: space-between;
-    gap:10px;
-}
-
-.hostels1_body
-{
+.hostels_children_body{
     margin:0px 0px 10px 10px;
     display:flex;
     flex-direction: column;
@@ -245,18 +242,9 @@ form
     box-sizing: border-box;
 }
 
-#hostels
-{
-    display: flex;
-}
+            /* Hébergement populaires */
 
-#hostels h2
-{
-    font-size: 17px;
-}
-
-#most_pop
-{
+#container_most_pop{
     background-color: #F2F2F2;
     width: 33%;
     border-radius: 15px;
@@ -266,35 +254,22 @@ form
     gap:25px;
 }
 
-#most_pop a
-{
+#container_most_pop a{
     transition: 0.2s;
 }
 
-#hostels_marseille
-{
-    background-color: #F2F2F2;
-    width: 66%;
-    border-radius: 15px;
-    padding:35px 20px;
+#container_most_pop a:hover{
+    transform:scale(1.05);
 }
 
-#most_pop_children
-{
+#most_pop_children{
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding:35px 40px 0px 40px;
 }
 
-h2
-{
-    font-size: 16px;
-}
-
-
-.hostels_pop
-{
+.hostels_pop{
     display: flex;
     background-color: white;
     height: 130px ;
@@ -306,18 +281,11 @@ h2
     margin: 0px 20px;
 }
 
-#most_pop a:hover
-{
-    transform:scale(1.05);
-}
-
-.hostels_pop h3
-{
+.hostels_pop h3{
     font-size: 12px;
 }
 
-.hostels_pop_body
-{
+.hostels_pop_body{
     padding:10px 0px 10px 10px;
     display: flex;
     flex-direction: column;
@@ -328,24 +296,28 @@ h2
 {
     height:25%;
 }
-    /* Cinquième section/Activités */
-#activities
-{
+
+        /* Cinquième section/Activités */
+
+#activities{
     display:flex;
     flex-direction: column;
     gap:20px;
     margin-top:50px;
 }
 
-#activities_children
-{
+#activities_children{
     display:flex;
     gap:40px;
 
 }
 
-#activities_children_port
-{
+#activities_children h3{
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+}
+
+#activities_children_port{
     height: 430px;
     width: 25%;
     box-shadow: 0px 10px 10px #F2F2F2;
@@ -353,8 +325,7 @@ h2
     overflow: hidden;
 }
 
-.activities_children_container_bis
-{
+.activities_children_container_bis{
     width:25%;
     display:flex;
     flex-direction: column;
@@ -363,24 +334,21 @@ h2
     
 }
 
-#activities_children_fort
-{
+#activities_children_fort{
     height: 270px;
     box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
 
-#activities_children_frioul
-{
+#activities_children_frioul{
     height: 120px;
     box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
 
-#activities_children_calanques
-{
+#activities_children_calanques{
     height: 430px;
     width: 25%;
     box-shadow: 0px 10px 10px #F2F2F2;
@@ -388,80 +356,60 @@ h2
     overflow: hidden;
 }
 
-#activities_children_notre_dame
-{
+#activities_children_notre_dame{
     height: 150px;
     box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
 
-#activities_children_longchamp
-{
+#activities_children_longchamp{
     height: 240px;
     box-shadow: 0px 10px 10px #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
 }
 
-#activities_children h3
-{
-    padding: 5px 0px 5px 10px;
-    font-size: 12px;
-}
-
 /* Footer */
 
-footer
-{
+footer{
     display:flex;
     background-color: #F2F2F2;
     font-size: 14px;
 }
 
-footer ul
-{
+footer ul{
     list-style-type: none;
 }
 
-footer ul a
-{
+footer ul a{
     text-decoration: none;
     color: black;
 }
 
-.footer_container
-{
+#footer_container{
     display:flex;
     gap:175px;
     padding:25px;
 }
 
-.footer_container_children ul
-{
+.footer_container_children ul{
     display:flex;
     gap:10px;
     flex-direction: column;
 }
 
-.footer_container_children
-{
+.footer_container_children{
     display:flex;
     gap:15px;
     flex-direction: column;
 }
 
-h3{
-    font-size: 16px;
-}
-
-
 /* Images */
 
-.image_hostels1
-{
+.image_hostels_children{
     width: 100%;
-    height: 110px;
+    height: 130px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -469,66 +417,66 @@ h3{
     box-sizing: border-box;
 }
 
-.image_pop
-{
+.image_pop{
     width: 40%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     object-fit: cover;
 }
 
-.image_de_notre_dame
-{
+.image_de_notre_dame{
     width: 100%;
     height: 75%;
     object-fit: cover;
 }
 
-.image_de_parc
-{
+.image_de_parc{
     width: 100%;
     height: 84%;
     object-fit: cover;
 }
 
-.image_vieux_port
-{
+.image_vieux_port{
     width: 100%;
     height: 91%;
     object-fit: cover;
 }
 
-.image_fort_de_pomegues
-{
+.image_fort_de_pomegues{
     width: 100%;
     height: 80%;
     object-fit: cover;
 }
 
-.image_iles_du_frioul
-{
+.image_iles_du_frioul{
     width: 100%;
     height: 69%;
     object-fit: cover;
 }
 
-.image_de_calanques
-{
+.image_de_calanques{
     width: 100%;
     height: 91%;
     object-fit: cover;
 }
 
-/* Responsive tablette*/
+/* Format tablette*/
 @media screen and (max-width: 991px)
 {
-    #hostels
-    {
+
+/* Tablette responsive Hôtels Marseille */
+
+    #container_hostels{
         flex-direction: column-reverse;
     }
 
-    #most_pop
-    {
+    #container_hostels_marseille{
+        width: inherit;
+    }
+
+/* Tablette responsive Hôtels populaires */
+
+    #container_most_pop{
         flex-direction: row;
         width: inherit;
         margin-left: inherit;
@@ -537,30 +485,24 @@ h3{
         margin-bottom: 10px;
     }
 
-    #most_pop a 
-    {
+    #container_most_pop a {
         width: 25%;
     }
-    #most_pop_children
-    {
+
+    #most_pop_children{
         flex-direction: column-reverse;
         padding: 20px 5px 20px 10px;
         width: 25%;
         text-align: center;
     }
 
-    .hostels_pop
-    {
+    .hostels_pop{
         margin:5px;
     }
 
-    #hostels_marseille
-    {
-        width: inherit;
-    }
+/* Tablette responsive Footer */
 
-    .footer_container
-    {
+    #footer_container{
         gap:100px;
     }
 }
@@ -568,190 +510,196 @@ h3{
 /* Responsive smartphone */
 @media screen and (max-width: 767px)
 {
-    main 
-    {
+
+/* Smartphone responsive générique */
+
+    main{
         padding:inherit;
     }
 
-    #logo
-    {
+/* Smartphone responsive header */
+
+    #logo{
         height:70px;
         margin: 20px 0 20px 40px;
     }
     
-    header
-    {
+    header{
         width:100%;
         flex-direction:column;
         padding:inherit;
     }
 
-    nav
-    {
-        border-bottom: solid 2px #F2F2F2;
-        margin-bottom: 10px;
+    nav{
         width: 100%;
         text-align: center;
     }
 
-    nav a:hover
-    {
-        border-top:inherit;
-        border-bottom: 2px solid #0065FC;
-        padding: 10px 0;
+    nav a{
+        border-bottom: solid 2px #F2F2F2;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        display:inline-block;
+        width:50%;
     }
 
-    nav ul
-    {
+    nav a:hover{
+        border-top:inherit;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+    nav ul{
         font-size: 22px;
         width: 100%;
         margin-bottom: 10px;
         display: inherit;
     }
 
-    nav li
-    {
+    nav ul a {
+        padding-top:inherit;
+    }
+
+    nav li{
         display:inline;
         margin-right: inherit;
     }
 
-    #search_city
-    {
+/* Smartphone responsive boutton rechercher */
+
+    .searching{
+        padding: 13px 50px 13px 13px;
+    }
+
+    #search_city{
         padding:0px 20px;
     }
 
-    .searching_glass
-    {
+    .searching_glass{
         display:inline-block;
         padding:12px;
         border: none;
         color: white;
         background-color: #0065FC;
         border-radius: 15px;
-        margin-left:185px;
+        margin-left:222px;
         position:absolute;
     }
 
-    .searching_button
-    {
+    .searching_button{
         display:none;
     }
 
-    #filters_parents
-    {
+/* Smartphone responsive Filtres et Informations */
+
+    #container_filters{
         flex-direction: column;
         align-items: inherit;
         padding: 0px 20px;
     }
 
-    #eco_parent
-    {
+    #icons_parent{
         flex-wrap: wrap;
     }
 
-    #informations
-    {
+    #informations{
         padding: 0px 20px;
     }
 
-    #hostels
-    {
+/* Smartphone responsive Hôtels Marseille */
+
+    #container_hostels{
         display:flex;
         flex-direction: column-reverse;
     }
 
-    #hostels_marseille
-    {
+    #container_hostels_marseille{
         background-color: inherit;
         padding:20px;
         margin-top: 10px;
     }
-    #most_pop
-    {
+
+    #hostels_children{
+        flex-direction: column;
+    }
+    
+    #hostels_children a{
+        height:inherit;
+        width: inherit;
+    }
+
+/* Smartphone responsive Hôtels populaires */
+
+    #container_most_pop{
         flex-direction: column;
         border-radius: inherit;
         padding: 10px 20px;
     }
 
-    #most_pop_children
-    {
+    #container_most_pop a {
+        width:inherit;
+    }
+
+    #most_pop_children{
         flex-direction: row;
         width:inherit;
         padding: inherit;
         margin-bottom: 10px;
     }
 
-    #most_pop a 
-    {
-        width:inherit;
-    }
+/* Smartphone responsive Activités */
 
-    .hostels_line1
-    {
-        flex-direction: column;
-    }
-    
-    .hostels_line1 a
-    {
-        height:inherit;
-        width: inherit;
-    }
-
-    #activities
-    {
+    #activities{
         padding:20px;
         margin-top:30px;
     }
 
-    #activities_children
-    {
+    #activities_children{
         flex-direction: column;
     }
 
-    #activities_children_port
-    {
-        width:inherit;
-        height: 200px;
-    }
-
-    .activities_children_container_bis
-    {
+    .activities_children_container_bis{
         width:inherit;
         height: inherit;
     }
-    #activities_children_calanques
-    {
-        width:inherit;
-        height: 200px;
-    }
-    #activities_children_longchamp
-    {
-        width:inherit;
-        height: 200px;
-    }
-    #activities_children_frioul
-    {
-        width:inherit;
-        height: 200px;
-    }
-    #activities_children_fort
-    {
-        width:inherit;
-        height: 200px;
-    }
-    #activities_children_notre_dame
-    {
+
+    #activities_children_port{
         width:inherit;
         height: 200px;
     }
 
-    #activities_children img
-    {
+    #activities_children_calanques{
+        width:inherit;
+        height: 200px;
+    }
+
+    #activities_children_longchamp{
+        width:inherit;
+        height: 200px;
+    }
+
+    #activities_children_frioul{
+        width:inherit;
+        height: 200px;
+    }
+
+    #activities_children_fort{
+        width:inherit;
+        height: 200px;
+    }
+
+    #activities_children_notre_dame{
+        width:inherit;
+        height: 200px;
+    }
+
+    #activities_children img{
         height:80%;
     }
 
-    .footer_container
-    {
+/* Smartphone responsive footer */
+    
+    #footer_container{
         flex-direction: column;
         gap:50px;
     }
