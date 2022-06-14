@@ -230,7 +230,7 @@ form{
 }
 
 #hostels_children a h3{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .hostels_children_body{
@@ -330,8 +330,7 @@ form{
     display:flex;
     flex-direction: column;
     gap:40px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
 #activities_children_fort{
